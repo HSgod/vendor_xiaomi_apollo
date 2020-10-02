@@ -92,5 +92,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     QtiTelephonyService \
+    QAS_DVC_MSP \
     ims \
     qcrilmsgtunnel
