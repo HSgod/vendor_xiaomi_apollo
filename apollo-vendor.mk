@@ -17,3 +17,35 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/apollo
 
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/apollo/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/xiaomi/apollo/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
+    vendor/xiaomi/apollo/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
+    vendor/xiaomi/apollo/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/xiaomi/apollo/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qcrilhook.xml \
+    vendor/xiaomi/apollo/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
+    vendor/xiaomi/apollo/proprietary/product/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephonyservice.xml \
+    vendor/xiaomi/apollo/proprietary/product/framework/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/QtiTelephonyServicelibrary.jar \
+    vendor/xiaomi/apollo/proprietary/product/framework/qcrilhook.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
+    vendor/xiaomi/apollo/proprietary/product/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qti-telephony-common.jar \
+    vendor/xiaomi/apollo/proprietary/product/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsdpl.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsqimf.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imscmservice.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/lib-imsrcs-v2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsrcs-v2.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/lib-imsrcsbaseimpl.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsrcsbaseimpl.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvideocodec.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvt.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/lib-imsvtcore.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtcore.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtextutils.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtutils.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/lib-imsxml.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsxml.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/libdiag_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdiag_system.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimscamera_jni.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.0.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.1.so
+
+PRODUCT_PACKAGES += \
+    QtiTelephonyService \
+    ims \
+    qcrilmsgtunnel
