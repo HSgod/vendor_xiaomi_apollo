@@ -28,6 +28,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/apollo/proprietary/product/framework/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/QtiTelephonyServicelibrary.jar \
     vendor/xiaomi/apollo/proprietary/product/framework/qcrilhook.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
     vendor/xiaomi/apollo/proprietary/product/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qti-telephony-common.jar \
+    vendor/xiaomi/apollo/proprietary/product/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so \
+    vendor/xiaomi/apollo/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
     vendor/xiaomi/apollo/proprietary/product/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsdpl.so \
     vendor/xiaomi/apollo/proprietary/product/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsqimf.so \
     vendor/xiaomi/apollo/proprietary/product/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imscmservice.so \
